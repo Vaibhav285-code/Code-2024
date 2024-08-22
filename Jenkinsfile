@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'This is Build Stage.'
+                git 'https://github.com/Vaibhav285-code/Code-2024.git' 
+		echo 'This is Build Stage.'
                 echo 'This is Jenkins Job'
                 sh '''echo "this is shell script step"
                 cd /var/lib/jenkins/workspace'''
